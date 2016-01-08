@@ -1,0 +1,52 @@
+//
+//  LoveMoivePrefixHeader.pch
+//  MyProject1
+//
+//  Created by 成都千锋 on 15/11/26.
+//  Copyright (c) 2015年 fazi. All rights reserved.
+//
+
+#ifndef MyProject1_LoveMoivePrefixHeader_pch
+#define MyProject1_LoveMoivePrefixHeader_pch
+
+// Include any system framework and library headers here that should be included in all compilation units.
+// You will also need to set the Prefix Header build setting of one or more of your targets to reference this file.
+
+
+
+#define WIDTH self.view.bounds.size.width
+#define HEIGHT self.view.bounds.size.height
+
+#define APP_KEY @"0d70b0baf0a7b7e0"
+
+#define TAB_IMAGE(name) [UIImage imageNamed:name]
+#define TAB_COLOR(r,g,b,a) [UIColor colorWithRed:r/255.0 green:g/255.0 blue:b/255.0 alpha:a]
+#define Text_Color TAB_COLOR(114, 146, 236, 1)
+
+#define FB_Frame CGRectMake(0, 0, 80, 0) //收藏按钮的大小
+#define PropertyString(str) @property (nonatomic, copy) NSString *str;
+
+#define BIG_FONT [UIFont systemFontOfSize:16]
+#define MIDDLE_FONT [UIFont systemFontOfSize:14]
+#define SMALL_FONT [UIFont systemFontOfSize:10]
+
+#define BARBUTTON(title, sel) [[UIBarButtonItem alloc] initWithTitle:title style:UIBarButtonItemStylePlain target:self action:sel]
+
+//***************************************
+#import "HEFDBManager.h"
+#import "MBProgressHUDManager.h"
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+#endif
